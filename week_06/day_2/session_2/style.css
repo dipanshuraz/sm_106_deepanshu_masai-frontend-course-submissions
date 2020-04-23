@@ -1,0 +1,88 @@
+  body {
+      font-family: 'Nunito', sans-serif;
+    }
+    .font-nav {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .fees:hover {
+      color: white;
+      background: red;
+    }
+  .container-img {
+    background: url(https://www.masaischool.com/static/posters/banner_1.jpg) no-repeat center center/cover;
+    height: 100vh;
+  }
+  .overlay {
+    background: rgba(172, 172, 172, 0.123);
+    height: 100vh;
+    z-index: 1;
+  }
+  .box {
+    width: 75%;
+    z-index: 2;
+    /* background: red; */
+    text-align: right;
+  }
+  .word-spacing {
+    word-spacing: 5px;
+  }
+  .details p,
+  .fs-22 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .details h1 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .grad-bg {
+    background-image: linear-gradient(to right bottom, #424280, #1467a3, #008bb7, #00adbd, #59ccbc);
+    height: 90vh;
+  }
+  .title-txt {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  .font-20 {
+    font-size: 20px;
+  }
+  .font-18 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .color-sky {
+    color: #008bb7;
+  }
+  .camp-title {
+    font-weight: 100;
+  }
+  .camp-title-text {
+    font-size: 1.6rem;
+  }
+  .card-1 {
+    border: 1.4rem solid rgb(247, 247, 247);
+  }
+  .fw-300 {
+    font-weight: 300;
+  }
+  .fw-100 {
+    font-weight: 100;
+  }
+  .grad-bg-card {
+    background: linear-gradient(312deg, rgba(139,67,215,1) 0%, rgba(88,206,213,1) 100%);
+  }
+  .rounded-pill {
+    border-radius: 40px;
+  }
+  .circle {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+  }
+  .bg-color-sky {
+    background: #008bb7;
+  }
+  i {
+    font-size: 40px;
+  }

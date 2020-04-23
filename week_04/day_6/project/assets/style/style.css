@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Gloria Hallelujah', cursive;
+  height: 100vh;
+  width: 100%;
+  background: rgb(155,227,198);
+background: linear-gradient(236deg, rgba(155,227,198,0.9178046218487395) 0%, rgba(255,171,208,1) 100%);
+}
+.chess-game {
+  width: 1000px;
+  margin: 10px auto;
+  z-index: 2;
+}
+
+.cell-num {
+  height: 95px;
+  width: 95px;
+  color: white;
+  background: rgb(231, 139, 139);
+  border: 2px solid rgb(204, 141, 141);
+  float: left;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 2rem;
+   
+}
+
+.cell {
+  border: 2px solid lightseagreen;
+  float: left;
+  height: 95px;
+  width: 95px;
+  border-radius: 5px;
+  margin: 5px;
+  transition: all 0.1s ease-in-out;
+  z-index: 1;
+  background: white;
+
+
+}
+.cell:hover {
+  color: black;
+  background: rgba(85, 189, 221, 0.705);
+  z-index: 2;
+  /* transform: translate(10px, -10px); */
+  transform: scale(1.2) rotateZ(10deg);
+
+}
+.gray {
+  background: rgb(196, 196, 196);
+}
+.chance {
+  height: 50px;
+  width: 500px;
+  text-align: center;
+  border: 2px solid black;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  
+}
+.chance-txt {
+  font-size: 1.5rem;
+  
+}
+.clear {
+  clear: both;
+}
+
+i {
+  font-size: 50px;
+  color: white;
+  
+}
+.ico-team-black {
+  font-size: 100px;
+  line-height: 70px;
+  text-align: center;
+}
+.ico-team-white {
+  font-size: 100px;
+  line-height: 70px;
+  text-align: center;
+}
+.blank {
+  background: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+
+ #div1 {
+  height: 90px;
+  width: 90x;
+  background: white;
+}
+.showElem {
+  height: 100px;
+  width: 400px;
+  float: left;
+
+}
+.res {
+  font-size: 100px;
+}
+
+
+/*  */
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  animation: remove 0.1s forwards 7s;
+}
+.overlay-left {
+  flex: 1;
+  height: 100vh;
+  width: 50%;
+  background: #ceffeb;
+  animation: slide-left 7s forwards ease-out 2s;
+}
+.overlay-right {
+  flex: 1;
+  height: 100vh;
+  width: 50%;
+  background: #ffd0e4;
+  animation: slide-right 7s forwards ease-out 2s;
+}
+
+@keyframes slide-left {
+  to {
+    transform: translateX(-1000px);
+  }
+}
+
+@keyframes slide-right {
+  to {
+    transform: translateX(+1000px);
+  }
+}
+@keyframes remove {
+  to {
+    transform: translateX(10000px);
+  }
+}
+
+.overlay-left,
+.overlay-right {
+  padding: 50px;
+  font-size: 4rem;
+  text-align: center;
+} 
+.text {
+  margin-top: 250px;
+}

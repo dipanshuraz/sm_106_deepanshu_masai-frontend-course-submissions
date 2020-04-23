@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Link style override */
+a {
+  text-decoration: none;
+  color: black;
+}
+.bg-item1 {
+  background: url("https://images.unsplash.com/photo-1553546895-531931aa1aa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80")
+    no-repeat center center/cover;
+  height: 70vh;
+  width: 100vw;
+  filter: saturate(0.5);
+}
+
+.bg-item2 {
+  background: url("https://images.unsplash.com/photo-1583922146273-68f11083858e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=937&q=80")
+    no-repeat center center/cover;
+  height: 70vh;
+  filter: saturate(0.5);
+  width: 100vw;
+}
+
+.bg-item3 {
+  background: url("https://images.unsplash.com/photo-1556767576-5ec41e3239ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80")
+    no-repeat center center/cover;
+  height: 70vh;
+  filter: saturate(0.5);
+  width: 100vw;
+}
+
+ul {
+  list-style: none;
+}
+
+.bg-svg1 {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("/images/p1.png") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.bg-svg2 {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("/images/p2.png") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.bg-svg3 {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("/images/p3.png") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+.bg-svg4 {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("/images/p4.png") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+.bg-svg5 {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("/images/p5.png") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+label {
+  font-size: 1.5rem;
+}
+
+input {
+  text-indent: 10px;
+  color: black;
+  font-size: 1rem;
+}

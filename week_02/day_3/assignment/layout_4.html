@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Layout_4</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 100px 300px;
+      grid-gap: 40px;
+    }
+    .nav {
+      grid-column: span 4;
+      background: yellow;
+    }
+    .box1 {
+      background: red;
+    }
+    .box2 {
+      background: greenyellow;
+    }
+    .box3 {
+      background: purple;
+    }
+    .box4 {
+      background: gray;
+    }
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 300px 300px;
+      }
+      .nav {
+        grid-column: span 2;
+      }
+    }
+    @media (max-width: 480px) {
+      .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px repeat(4, 150px);
+        grid-gap: 20px;
+      }
+      .nav {
+        grid-column: span 1;
+        font-size: 52px;
+        line-height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      NAVIGATION  
+    </div>
+    <div class="box1">
+      BOX-1
+    </div>
+    <div class="box2">
+      BOX-2
+    </div>
+    <div class="box3">
+      BOX-3
+    </div>
+    <div class="box4">
+      BOX-4
+    </div>
+  </div>
+</body>
+</html>

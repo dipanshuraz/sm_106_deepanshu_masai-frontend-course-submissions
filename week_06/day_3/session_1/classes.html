@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Practise Attributes</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <style type="text/css">
+            .class-h1 {
+                color: red
+            }
+            .class-h3 {
+                color: green;
+                border: 2px solid black;
+            }
+            .class-h5 {
+                color: orange;
+            }
+            .class-div {
+                color: yellow;
+                font-size: 20px;
+                margin: 10px;
+            }
+            .class-odd {
+                color: black;
+                background: white;
+            }
+            .class-even {
+                background: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>First H1</h1>
+        <h1>Second H1</h1>
+        <h3>First H3</h3>
+        <h3>Second H3</h3>
+        <h5 class="class-h3">First H5</h5>
+        <h5 class="class-h3">Second H5</h5>
+        <h5 class="class-h3">Third H5</h5>
+        <div id="test-2" class="class-div">MASAI School</div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <hr/>
+        <button id="changeH1">Change H1</button>
+        <button id="changeH3">Change H3</button>
+        <button id="changeH5">Change H5</button>
+        <button id="changeDiv">Change DIV</button>
+        <button id="changePara">Change P</button>
+    <script>         
+        $('#changeH1').click(function(){
+            $('h1:nth-child(1)').addClass('class-h1')
+        })
+        $('#changeH3').click(function(){
+            $('h3').addClass('class-h3')
+        })
+        $('#changeH5').click(function(){
+            $('h5').addClass('class-h5')
+        })
+        $('#changeDiv').click(function(){
+            $('#test-2').removeClass('class-div')
+        })
+        $('#changePara').click(function(){
+            $('p:nth-child(even)').addClass('class-even')
+            $('p:nth-child(odd)').addClass('class-odd')
+
+        })
+        
+    </script>
+    </body>
+</html>

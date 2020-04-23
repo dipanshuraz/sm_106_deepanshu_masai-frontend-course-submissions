@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .grid {
+      display: grid;
+      width: 900px;
+      grid-template-columns: repeat(4, 1fr);
+      margin: 0 auto;
+      margin-top: 50px;
+
+    }
+    .grid div {
+      height: 200px;
+      margin: 20px;
+      background: teal;
+    }
+    .grid div:nth-child(5) {
+      grid-column-start: 1;
+    }
+    .grid div:nth-child(8) {
+      grid-column-start: 1;
+    }
+    .grid div:nth-child(10) {
+      grid-column-start: 1;
+    }
+    @media (max-width: 1024px)
+    {
+      .grid {
+        max-width: 1000px;
+
+      }
+      .grid div {
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        background: lightgreen;
+      }
+    }
+    @media (max-width: 600px) {
+      .grid {
+        max-width: 600px;
+      }
+      .grid div {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        background: lightsalmon;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  </div>
+</body>
+</html>

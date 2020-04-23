@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    p {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 3rem;
+    }
+    input {
+      height: 80px;
+      width: 220px;
+      text-indent: 20px;
+      font-size: 2rem;
+    }
+    select {
+      height: 80px;
+      width: 220px;
+      font-size: 2rem;
+    }
+    button {
+      height: 80px;
+      width: 220px;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <p id="output">
+
+  </p>
+
+  <select name="" id="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+  <input type="text" id="age" minlength="4">
+  <button onclick="marriage()" id="">Click</button>
+
+  <script>
+   function marriage() {
+
+    var year = document.getElementById('age').value;
+    // var gender = document.getElementById('gender').value;
+    var status = '';
+
+    if(year) {
+      if(year > 1999) {
+        status = 'Not Eligible for Marriage';
+      } else if (year <= 1999) {
+        status = 'Eligible for Marriage';
+      }
+    }
+
+    document.getElementById('output').innerHTML = status;
+   }
+  </script>
+</body>
+</html>

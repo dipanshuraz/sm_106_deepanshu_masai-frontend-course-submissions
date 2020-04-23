@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <title>Coding 1</title>
+  </head>
+  <body>
+    <div class="container-fluid px-5">
+      <div class="row">
+        <div class="col-4 mt-5">
+          <form action="">
+            <div class="form-group ">
+              <label for="">Name</label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+            <div class="form-group ">
+              <label for="">Username</label>
+              <input type="text" class="form-control" id="username" />
+            </div>
+            <div class="form-group">
+              <label for="">Email</label>
+              <input type="email" class="form-control" id="emailInput" />
+            </div>
+            <div class="form-group">
+              <label for="">Password</label>
+              <input type="text" class="form-control" id="pass" />
+            </div>
+            <div class="form-group">
+              <label>Type</label>
+              <select class="form-control" id="selectType">
+                <option value="">Select</option>
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-outline-dark" id="submit">Submit</button>
+            </div>
+          </form>
+          <div class="display text-center">
+            <div class="details p-3 m-3" id="details"></div>
+            <p class="lead" id="email"></p>
+          </div>
+        </div>
+        <div class="col-8 mt-5">
+          <div class="row">
+            <div class="col-4"></div>
+          </div>
+          <p class="lead text-center">Show User</p>
+          <div class="row">
+            <div class="col m-1 p-0">
+              <select class="custom-select" id="showUser">
+                <option value=""> User Details</option>
+              </select>
+            </div>
+            <div class="col m-1 p-0">
+              <select class="custom-select" id="sortByName">
+                <option value="name"> Sort By Name </option>
+                <option value="username"> Sort By Username </option>
+              </select>
+            </div>
+            <div class="col m-1 p-0">
+              <select class="custom-select" id="orderBy">
+                <option value="ascending">Ascending</option>
+                <option value="descending">Descending</option>
+              </select>
+            </div>
+            <div class="col m-1 p-0">
+              <select class="custom-select" id="userType">
+                <option value="def-type">User Type</option>
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+              </select>
+            </div>
+          </div>
+
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">Type</th>
+              </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

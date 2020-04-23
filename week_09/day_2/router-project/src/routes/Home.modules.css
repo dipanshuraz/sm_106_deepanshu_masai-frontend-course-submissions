@@ -1,0 +1,21 @@
+/* Home */
+
+.bg-home-1 {
+  background: url("https://images.pexels.com/photos/2189758/pexels-photo-2189758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat center center/cover;
+  height: 92vh;
+  width: 100vw;
+}
+.bg-home-2 {
+  background: url("https://images.pexels.com/photos/1140907/pexels-photo-1140907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat center center/cover;
+  height: 92vh;
+  width: 100vw;
+}
+
+.bg-home-3 {
+  background: url("https://images.pexels.com/photos/3043215/pexels-photo-3043215.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+    no-repeat center center/cover;
+  height: 92vh;
+  width: 100vw;
+}

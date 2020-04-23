@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Unix</title>
+  <style>
+    * {
+      font-family: sans-serif;
+      box-sizing: border-box;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+    .linus {
+      
+      width: 500px;
+      height: 400px;
+      background: #E3DADB;
+      padding: 40px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .linus > img {
+      width: 110px;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .salman {
+      display: flex;
+
+
+    }
+    .salman {
+      width: 85%;
+      margin: 0 auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .salman > img {
+      width: 150px;
+    }
+    .bottom {
+      width: 98%;
+      background: rgb(218, 93, 48);
+      display: flex;
+      padding: 20px;
+    }
+    .ken {
+      flex: 1;
+    }
+    .dennis {
+
+    }
+    .line {
+      margin: 20px;
+      width: 5px;
+      height: 80px;
+      background: black;
+      margin-right: 30%;
+    }
+    /* fonts */
+    .title {
+      font-size: 40px;
+      color: navy;
+      text-align: center;
+    }
+    .title-text {
+      
+      font-size: 32px;
+      color: black;
+      text-align: center;
+    }
+    .title-sal {
+      
+      font-size: 40px;
+      color: red;
+      text-align: left;
+      margin-left: 40px;
+    }
+    .desc-sal {
+      margin-left: 40px;
+      width: 80%;
+      font-size: 22px;
+     
+    }
+    .ken p:first-child {
+      font-size: 32px;
+      color: white;
+      margin: 20px;
+    }
+    .ken p:last-child {
+      width: 70%;
+      font-size: 24px;
+      color: black;
+      margin: 20px;
+    }
+    .dennis p:first-child {
+  
+      font-size: 32px;
+      color: white;
+      margin: 20px;
+      text-align: right;
+      
+    }
+    .dennis p:last-child {
+      font-size: 24px;
+      color: black;
+      margin: 20px;
+      text-align: right;
+    }
+    @media (max-width: 1024px) {
+      .linus {
+        background: lightgreen;
+      }
+      .salman {
+      background: lightseagreen
+      }
+      .bottom {
+        background: lightsteelblue;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <div class="linus">
+        <img src="https://raw.githubusercontent.com/masai-school/full-stack-dev-1910/master/week_01/day_4/resources/images/linus.jpg" alt="">
+        <p class="title">Linus Torvals</p>
+        <p class="title-text">The Creator of Linux & Git</p>
+      </div>
+      <div class="salman">
+        <img src="https://raw.githubusercontent.com/masai-school/full-stack-dev-1910/master/week_01/day_4/resources/images/khan.jpg" alt="">
+        <div>
+            <p class="title-sal">Salman Khan</p>
+            <p class="desc-sal">Salman khan is the founder of the Khan Academy which has a mission of providing a free world-class education for anyone, anywhere.</p>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="ken">
+          <p>Ken Thompson</p>
+          <p>Design and implementation the original unix operating system</p>
+        </div>
+        <div class="line"></div>
+        <div class="dennis">
+          <p>Dennis Ritchie</p>
+          <p>The Creator C Programming Language</p>
+        </div>
+      </div>
+    </div>    
+  </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  color: gray;
+}
+.clear {
+  clear: both;
+}
+/* Grid Container */
+
+.container {
+  padding: 3rem 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Article Tag */
+
+article {
+  flex: 8;
+  margin-right: 2rem;
+}
+article .article-details {
+  padding: 0rem 2.5rem;
+}
+
+article .article-details > h1 {
+  font-size: 2rem;
+  margin-top: 2.7rem;
+  font-weight: 700;
+}
+article .article-details > p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: gray;
+}
+
+article .article-details p:nth-child(1) {
+  padding: 0rem 2rem;
+  color: red;
+}
+
+article .article-details > .icon {
+  margin: 1rem 0rem;
+  word-spacing: 2px;
+}
+
+/* Aside Tag */
+
+aside {
+  flex: 4;
+  background-color: rgba(250, 250, 250, 0.829);
+  padding: 2rem;
+}
+
+aside > h5 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 1rem 0rem;
+}
+/* Card Box */
+
+.card-box {
+  margin-top: 2rem;
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+
+/* Card */
+
+.card {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.card figure img {
+  height: 80px;
+  width: 80px;
+}
+.card > .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.card > .details > p {
+  padding: 0.2rem 0rem;
+}
+
+.card > .details p:nth-child(1) {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.card > .details p:nth-child(2) {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.card button {
+  height: 2rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
+/* Date Card  */
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.date-card {
+  margin-left: 2.5rem;
+  margin-top: -5rem;
+  position: absolute;
+  background-color: red;
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 2rem;
+  }
+  article .article-details > h1 {
+    font-size: 1.5rem;
+  }
+  article .article-details > p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  .date-card {
+    margin-top: -4rem;
+    background-color: red;
+    padding: 0.6rem 1.4rem;
+    color: white;
+  }
+  article .article-details {
+    padding: 0rem 1.5rem;
+  }
+  article {
+    margin-right: 1rem;
+  }
+  aside {
+    flex: 4;
+    background-color: rgba(250, 250, 250, 0.829);
+    padding: 1rem;
+  }
+  aside > h5 {
+    font-size: 1.4rem;
+    margin: 0.7rem 0rem;
+  }
+
+  .card-box {
+    margin-top: 1rem;
+  }
+  .card > .details p:nth-child(1) {
+    font-size: 0.9rem;
+  }
+  .card > .details p:nth-child(2) {
+    font-size: 0.8rem;
+  }
+  .card > .details > p {
+    padding: 0.1rem 0rem;
+  }
+  .card > .details {
+    padding: 0rem 0.1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    display: block;
+  }
+  .date-card {
+    margin-top: -3rem;
+    background-color: red;
+    padding: 0.2rem 1rem;
+  }
+}
+
+/* form */
+section {
+  margin: 0 4rem;
+}
+
+.form {
+  margin: 2rem;
+  width: 5rem;
+}
+
+form fieldset {
+  padding: 1rem;
+}
+
+label {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+form input[type="text"] {
+  float: left;
+  height: 30px;
+  width: 200px;
+  text-indent: 10px;
+  font-size: 1rem;
+  margin: 0 1rem;
+  width: 50vw;
+}
+
+button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  border: white;
+  color: white;
+  font-size: 1rem;
+}

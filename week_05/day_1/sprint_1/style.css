@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  /* background: url(/img/bg.jpg) no-repeat center center/cover; */
+}
+/* Form */
+.container {
+  display: flex;
+}
+.clear {
+  clear: both;
+}
+form label {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: right;
+}
+form input {
+  border: 0px;
+  border-bottom: 1px solid black;
+  height: 50px;
+  width: 200px;
+  text-indent: 20px;
+  font-size: 1.2rem;
+  margin: 10px;
+  outline: none;
+  text-align: center;
+}
+
+form input::placeholder {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.507);
+}
+form input:hover {
+  border-left: 5px solid rgb(0, 0, 0);
+  border-bottom: 0px;
+  background: #FAFAFA;
+}
+#btn,
+#btn2 {
+  border: 2px solid black;
+  height: 50px;
+  text-align: center;
+  text-indent: 0px;
+  margin: 10px;
+  
+}
+#btn:hover,
+#btn2:hover {
+  background: rgb(128, 128, 128);
+  color: white;
+}
+legend {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.form {
+  flex: 1;
+  margin: 50px 0px 0px 50px;
+  
+}
+select {
+  height: 50px;
+  width: 200px;
+  margin: 10px;
+  text-indent: 20px;
+  font-size: 1.2rem;
+  outline: none;
+  border: 0px;
+  background: white;
+  border-bottom: 1px ridge black;
+  
+}
+select:hover {
+  border-left: 5px solid rgb(0, 0, 0);
+  border-bottom: 0px;
+  background: #FAFAFA;
+}
+.ico {
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+
+/* Result */
+.result {
+  /* background-color: #BCAAA4; */
+  height: 1000px;
+  flex: 2;
+  padding: 50px;
+}
+.result td {
+  border: 1px solid black;
+  padding: 15px 50px;
+  font-size: 1.2rem;
+}

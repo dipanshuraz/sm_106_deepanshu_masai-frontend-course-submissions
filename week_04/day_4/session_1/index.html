@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coding Session 1!</title>
+</head>
+<body>
+	<!-- These elements below are for FSD.JS.9.1-->
+	<h1> Create your own exponentiation function! </h1>
+	<input type="text" name = "num1" id="num1">
+	<input type="text" name = "num2" id="num2">
+	<p id="output"> </p>
+	</hr>
+	<button onclick="exponent()">Click here to find the exponent!</button>
+	<!-- These elements above are for FSD.JS.9.1-->
+
+	<!-- These elements below are for FSD.JS.9.2-->
+	<h1>Sum of multiples of 3 and 5!</h1>
+	<p id="task-2-output"></p>
+	<input type="text" id="task-2-num">
+	<button onclick="sumOf3And5()">Click here for the output!</button>
+	
+	<!-- These elements above are for FSD.JS.9.2-->
+
+	<!-- These elements below are for FSD.JS.9.3-->
+	<h1>Check if the users email is valid!</h1>
+	<label for="Email">Email</label>
+	<input type="text" id="email" />
+	<button onclick="validateEmail()">Check Email!</button>
+	<!-- These elements above are for FSD.JS.9.3-->
+
+
+	<script type="text/javascript">
+		//Write javascript for FSD.JS.9.1 here
+		function exponent(){
+			var output = 1;
+			var val = document.getElementById('num1').value;
+			var pow = document.getElementById('num2').value;
+			for(var i=0;i<pow;i++) {
+			output *= val;
+			}
+			document.getElementById('output').innerHTML = output;
+			
+			var multi = val*pow;
+			alert(multi);
+
+		}
+		
+		//Write javascript for FSD.JS.9.2 here
+		function sumOf3And5(){
+			var res = 0;
+			var final ;
+			var str = ''
+			var count= 0;
+			var limit = document.getElementById('task-2-num').value;
+			for(var i=0;i<=limit;i++) {
+				if(i%3==0 && i%5==0) {
+					res = res + i;
+					count++
+				}
+			}
+			
+			for(var i=1;i<count;i++) {
+				str = str+i*15+' + ';
+			} 
+			final = str + '='+res;
+			document.getElementById('task-2-output').innerHTML = final;
+
+		}
+		//Write javascript for FSD.JS.9.3 here
+// 		function validateEmail(){
+// 			var validChar = [
+//   "a",
+//   "b",
+//   "c",
+//   "d",
+//   "e",
+//   "f",
+//   "g",
+//   "h",
+//   "i",
+//   "j",
+//   "k",
+//   "l",
+//   "m",
+//   "n",
+//   "o",
+//   "p",
+//   "q",
+//   "r",
+//   "s",
+//   "t",
+//   "u",
+//   "v",
+//   "w",
+//   "x",
+//   "y",
+//   "z",
+//   "0",
+//   "1",
+//   "2",
+//   "3",
+//   "4",
+//   "5",
+//   "6",
+//   "7",
+//   "8",
+//   "9",
+//   "_",
+//   "-",
+//   "@",
+//   "."
+// ];
+
+// 			var email = document.getElementById('email').value;
+// 			if(!email.includes(validChar)) {
+// 				alert('Valid')
+// 			} else {
+// 				alert('Invalid')
+// 			}
+// }
+	</script>
+</body>
+</html>

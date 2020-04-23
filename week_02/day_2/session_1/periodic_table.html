@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Periodic Table</title>
+  <style>
+    * {
+      font-family: sans-serif;
+    }
+    .container {
+      margin: 20px;
+    }
+    .box {
+      height: 50px;
+      width: 50px;
+      background: #89A02D;
+      margin: 10px;
+      float: left;
+      border: 2px solid black;
+    }
+    .clear {
+      clear: both;
+    }
+    .main-title {
+      margin-top: 30px;
+      font-size: 28px;
+      text-align: center;
+    }
+    .left {
+      float: left;
+    }
+    .mid {
+      float: left;
+      margin-top: 50px;
+    }
+    
+    .mid .elem {
+      height: 150px;
+      width: 150px;
+      background: #82A02E;
+      border: 2px solid black;
+    }
+    .mid > div {
+      background: #2045f5;
+    }
+    .elem > p {
+      font-size: 18px;
+      margin: 10px;
+    }
+    .elem .text-right {
+      text-align: right;
+    }
+    .elem .title {
+      font-size: 48px;
+    }
+    .right {
+      float: left;
+    }
+    
+    .bottom {
+      margin-top: 50px;
+      margin-left: 20%;
+    }
+    .box-down {
+      margin: 0px;
+      height: 50px;
+      width: 50px;
+    }
+    .row-1 > div {
+      float: left;
+      background: #47582E;
+      border: 1px ridge #695A43;
+    }
+    .row-2 > div {
+      float: left;
+      background: #95BD5F;
+      border: 1px ridge #695A43;
+    }
+    .text {
+      font-size: 18px;
+      text-align: center;
+      line-height: 50px;
+    }
+    .text-white {
+      font-size: 18px;
+      text-align: center;
+      line-height: 50px;
+      color: white;
+    }
+    .text-l {
+      font-size: 32px;
+      text-align: center;
+      line-height: 50px; 
+      color: white;
+    }
+    .dark-border {
+      border: 5px solid black;
+      background: #FCE6D5;
+      height: 45px;
+      width: 45px;
+
+    }
+    .float-right {
+      float: right;
+    }
+    /* Color */
+
+    .clr-rust {
+      background: #AA2622;
+    }
+    .clr-pink {
+      background: #ed3c65;
+    }
+    .clr-purple {
+      background: #ab3487;
+    }
+    .clr-yellow {
+      background: #facd48;
+    }
+    .clr-brown {
+      background: #6d535e;
+    }
+    .clr-orange {
+      background: #ef6437;
+    }
+    .clr-green {
+      background: #599f2c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main-title">
+      THE PERIODIC TABLE OF ELEMENTS
+    </div>
+    <div class="left">
+      <div class="box text-l clr-rust">H</div>
+      <div class="clear"></div>
+      <div class="box"></div>
+      <div class="box text clr-orange">4</div>
+      <div class="clear"></div>
+      <div class="box"></div>
+      <div class="box text clr-orange">12</div>
+      <div class="clear"></div>
+      <div class="box"></div>
+      <div class="box text clr-orange">20</div>
+      <div class="clear"></div>
+      <div class="box"></div>
+      <div class="box text clr-orange">36</div>
+      <div class="clear"></div>
+      <div class="box"></div>
+      <div class="box text clr-orange">56</div>
+      <div class="box dark-border"></div>
+      <div class="clear"></div>
+      <div class="box"></div>
+      <div class="box text clr-orange">88</div>
+      <div class="box dark-border"></div>
+    </div>
+    <div class="mid">
+      <div class="box elem">
+        <p class="text-right">14</p>
+        <p class="title ">Si</p>
+        <p>Silicon</p>
+      </div>
+      <div class="clear"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="clear"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="clear"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="clear"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="clear"></div>
+    </div>
+    <div class="right">
+      <div class="box float-right clr-yellow"></div>
+      <div class="clear"></div>
+      <div class="box clr-purple"></div>
+      <div class="box clr-green"></div>
+      <div class="box clr-green"></div>
+      <div class="box clr-green"></div>
+      <div class="box clr-pink"></div>
+      <div class="box clr-yellow"></div>
+      <div class="clear"></div>
+      <div class="box clr-orange"></div>
+      <div class="box clr-purple"></div>
+      <div class="box clr-green"></div>
+      <div class="box clr-green"></div>
+      <div class="box clr-pink"></div>
+      <div class="box clr-yellow"></div>
+      <div class="clear"></div>
+      <div class="box clr-orange"></div>
+      <div class="box clr-purple"></div>
+      <div class="box clr-purple"></div>
+      <div class="box clr-green"></div>
+      <div class="box clr-pink"></div>
+      <div class="box clr-yellow"></div>
+      <div class="clear"></div>
+      <div class="box clr-orange"></div>
+      <div class="box clr-orange"></div>
+      <div class="box clr-purple"></div>
+      <div class="box clr-purple"></div>
+      <div class="box clr-pink"></div>
+      <div class="box clr-yellow"></div>
+      <div class="clear"></div>
+      <div class="box clr-orange"></div>
+      <div class="box clr-orange"></div>
+      <div class="box clr-orange"></div>
+      <div class="box clr-purple"></div>
+      <div class="box clr-pink"></div>
+      <div class="box clr-yellow"></div>
+      <div class="clear"></div>
+      <div class="box clr-brown"></div>
+      <div class="box clr-brown"></div>
+      <div class="box clr-brown"></div>
+      <div class="box clr-brown"></div>
+      <div class="box clr-brown"></div>
+      <div class="box clr-brown"></div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div class="bottom">
+      <div class="row-1">
+          <div class="box-down text-white">La</div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+      </div>
+      <div class="clear"></div>
+      <div class="row-2">
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down text">Am</div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down"></div>
+          <div class="box-down text">Na</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

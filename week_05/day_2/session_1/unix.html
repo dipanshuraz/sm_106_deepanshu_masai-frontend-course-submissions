@@ -1,0 +1,230 @@
+<html>
+    <head>
+        <title>Unix</title>
+        <style>
+            * {
+      font-family: sans-serif;
+      box-sizing: border-box;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+    .linus {
+      
+      width: 500px;
+      height: 400px;
+      background: #E3DADB;
+      padding: 40px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .linus > img {
+      width: 110px;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .salman {
+      display: flex;
+
+
+    }
+    .salman {
+      width: 85%;
+      margin: 0 auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .salman > img {
+      width: 150px;
+    }
+    .bottom {
+      width: 98%;
+      background: rgb(218, 93, 48);
+      display: flex;
+      padding: 20px;
+    }
+    .ken {
+      flex: 1;
+    }
+    .dennis {
+
+    }
+    .line {
+      margin: 20px;
+      width: 5px;
+      height: 80px;
+      background: black;
+      margin-right: 30%;
+    }
+    /* fonts */
+    .title {
+      font-size: 40px;
+      color: navy;
+      text-align: center;
+    }
+    .title-text {
+      
+      font-size: 32px;
+      color: black;
+      text-align: center;
+    }
+    .title-sal {
+      
+      font-size: 40px;
+      color: red;
+      text-align: left;
+      margin-left: 40px;
+    }
+    .title-sal:after {
+      content: 'Salman Khan';
+    }
+    .desc-sal {
+      margin-left: 40px;
+      width: 80%;
+      font-size: 22px;
+     
+    }
+    .desc-sal::after {
+      content: 'Salman khan is the founder of the Khan Academy which has a mission of providing a free world-class education for anyone, anywhere.';
+    }
+    .ken p:first-child {
+      font-size: 32px;
+      color: white;
+      margin: 20px;
+    }
+    .ken p:last-child {
+      width: 70%;
+      font-size: 24px;
+      color: black;
+      margin: 20px;
+    }
+    .dennis p:first-child {
+  
+      font-size: 32px;
+      color: white;
+      margin: 20px;
+      text-align: right;
+      
+    }
+    .dennis p:last-child {
+      font-size: 24px;
+      color: black;
+      margin: 20px;
+      text-align: right;
+    }
+    @media (max-width: 1024px) {
+      .linus {
+        background: lightgreen;
+      }
+      .salman {
+      background: lightseagreen
+      }
+      .bottom {
+        background: lightsteelblue;
+      }
+    }
+        </style>
+    </head>
+    <body>
+       <button onclick="onButton()">Create Page</button>
+       <script>
+          function onButton() {
+
+            var bodyElem = document.querySelector('body')
+
+            var container = document.createElement('div')
+            container.setAttribute('class','container')
+            
+            var top = document.createElement('div')
+            top.setAttribute('class','top')
+            
+            var div1 = document.createElement('div')
+            div1.setAttribute('class','linus')
+            
+                var img = document.createElement('img')
+                img.setAttribute('src','https://raw.githubusercontent.com/masai-school/full-stack-dev-1910/master/week_01/day_4/resources/images/linus.jpg')
+                div1.appendChild(img)
+
+                var p1 = document.createElement('p')
+                p1.setAttribute('class','title')
+                p1.innerText  = 'Linus Torvals'
+                div1.appendChild(p1)
+
+                var p2 = document.createElement('p')
+                p2.setAttribute('class','title-text')
+                p2.innerText = 'The Creator of Linux & Git'
+                div1.appendChild(p2)
+                
+            var div2 = document.createElement('div')
+            div2.setAttribute('class','salman')
+
+                var img = document.createElement('img')
+                img.setAttribute('src','https://raw.githubusercontent.com/masai-school/full-stack-dev-1910/master/week_01/day_4/resources/images/khan.jpg')
+                div2.appendChild(img)
+
+                var p1 = document.createElement('p')
+                p1.setAttribute('class','title-sal')
+                
+                div2.appendChild(p1)
+
+                var p2 = document.createElement('p')
+                p2.setAttribute('class','desc-sal')
+                div2.appendChild(p2)
+
+          var bottom = document.createElement('div')
+          bottom.setAttribute('class','bottom')
+          
+
+            var kenDiv = document.createElement('div')
+            kenDiv.setAttribute('class','ken')
+           
+
+              var name = document.createElement('p')
+              p1.innerText = 'Ken Thompson'
+              
+
+              var desc = document.createElement('p')
+              p2.innerText = 'Design and implementation the original unix operating system'
+              
+
+          var line = document.createElement('div')
+          line.setAttribute('class','line')
+            
+          
+          // var dennis = document.createElement('div')
+          // dennis = setAttribute('class','dennis')
+          
+
+          //   var nm = document.createElement('p')
+          //   nm.innerText = 'Dennis Ritchie'
+            
+
+          //   var dsc = document.createElement('p')
+          //   dsc.innerText = 'The Creator Of C Programming Language'
+            
+
+            bottom.appendChild(kenDiv)
+              kenDiv.appendChild(name)
+              kenDiv.appendChild(desc)
+            bottom.appendChild(line)
+            // bottom.appendChild(dennis)
+            //     dennis.appendChild(nm)
+            //     dennis.appendChild(dsc)
+
+            
+          top.appendChild(div1)
+          top.appendChild(div2)
+          top.appendChild(bottom)
+          container.appendChild(top)
+          bodyElem.appendChild(container)
+
+
+
+
+          }
+
+       </script>
+    </body>
+</html>

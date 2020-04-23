@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Leader Board</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+    p {
+      font-size: 2rem;
+      font-weight: bolder;
+      line-height: 1rem;
+      text-align: center;
+    }
+    .display-screen {
+      font-size: 3rem;
+      /* line-height: 3rem; */
+    }
+    .res-1, 
+    .res-2 {
+      font-size: 2.2rem;
+      line-height: 2.5rem;
+    }
+    .enter-btn {
+      
+      line-height: 6.5rem;
+      font-size: 2rem;
+      letter-spacing: 5px;
+    }
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .center {
+      width: 200px; 
+      margin: 0 auto;
+    }
+
+    .res {
+      height: 100px;
+      width: 150px;
+      background: lightcoral;
+      border: 5px solid black;
+    }
+    .display {
+      margin: 20px 20px 10px 20px;
+      height: 100px;
+      width: 400px;
+      background: lightgray;
+      clear: both;
+      border: 5px solid black;
+    }
+    .btn-pad {
+      margin: 20px;
+      background: lightseagreen;
+      border: 5px solid black;
+      height: 60px;
+      width: 100px;
+      float: left;
+    }
+    .clear {
+      clear: both;
+    }
+    .enter {
+      width: 450px;
+      height: 100px;
+      /* border: 5px solid black; */
+      background: black;
+      color: white;
+    }
+    .flex {
+      display: flex;
+      flex-direction: row;
+    }
+    .left {
+      /* float: left; */
+      flex: 1;
+      margin-right: 100px;
+    }
+    .right {
+      /* float: right; */
+      flex: 1;
+    }
+    .num {
+      line-height: .5rem;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+      <div>
+          <div class="flex">
+              <div class="left">
+                  <div class="res">
+                      <p class="res-1">43</p>
+                    </div>
+                    <p class="title">
+                        MIN
+                    </p>
+              </div>
+              <div class="right">
+                  <div class="res">
+                      <p class="res-2">2019</p>
+                    </div>
+                    <p class="title">
+                        MAX
+                    </p>
+                  </div>
+              </div>
+          </div>
+        <div>
+          <div class="clear"></div>
+          <div><p class="title">SCORE</p></div>
+          <div class="display">
+            <p class="display-screen">
+              #
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="btn-pad"><p  class="num num-1">1</p></div>
+          <div class="btn-pad"><p  class="num num-2">2</p></div>
+          <div class="btn-pad"><p  class="num num-3">3</p></div>
+          <div class="clear"></div>
+          <div class="btn-pad"><p class="num num-4">4</p></div>
+          <div class="btn-pad"><p class="num num-5">5</p></div>
+          <div class="btn-pad"><p class="num num-6">6</p></div>
+          <div class="clear"></div>
+          <div class="btn-pad"><p class="num num-7">7</p></div>
+          <div class="btn-pad"><p class="num num-8">8</p></div>
+          <div class="btn-pad"><p class="num num-9">9</p></div>
+          <div class="clear"></div>
+          <div class="center">
+            <div class="btn-pad"><p class="num num-0">0</p></div>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="enter">
+          <p class="enter-btn">ENTER</p>
+        </div>
+  </div>
+
+  <script>
+    
+  </script>
+</body>
+</html>

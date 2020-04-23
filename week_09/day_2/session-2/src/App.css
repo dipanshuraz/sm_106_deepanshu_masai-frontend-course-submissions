@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Nova-Bold;
+  src: url(./fonts/Proxima-Nova-Bold.otf);
+}
+@font-face {
+  font-family: Nova;
+  src: url(./fonts/Proxima-Nova-Regular.otf);
+}
+body {
+  font-family: Nova;
+  color: #1f71ee;
+}
+.darker {
+  font-family: Nova-Bold;
+}
+.bold-text {
+  font-family: Nova-Bold;
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+.red {
+  color: red;
+}
+.lh-1 {
+  line-height: 2rem;
+}
+.rem1 {
+  font-size: 1rem;
+}
+td {
+  padding: 5px;
+}
+.bg-blue {
+  background-color: #1f71ee;
+}
+th {
+  padding: 2rem;
+}

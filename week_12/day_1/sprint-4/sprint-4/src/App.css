@@ -1,0 +1,60 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.workspace-color {
+  background-color: #4a154b;
+  border: 0;
+}
+.workspace-light {
+  color: #4a154b;
+  background: #e9e5e1;
+  /* border: #3e003f00; */
+}
+.poster {
+  background: url("https://a.slack-edge.com/59662/marketing/img/homepage/video/brand-campaign_hero-poster.jpg")
+    no-repeat center center/cover;
+  height: 60vh;
+}
+.dark-title {
+  font-weight: 900;
+  font-size: 3.5rem;
+}
+.blueColor {
+  color: blue;
+  text-decoration: underline;
+}
+.dark-title-2 {
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+.light-title-2 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: white;
+}
+.dark {
+  font-size: 1.2rem;
+}
+.bg-purple {
+  background-color: #4a154b;
+}
+.light-btn {
+  background-color: white;
+  color: #4a154b;
+  border: 0;
+}
+.light-outline-btn {
+  background-color: #4a154b;
+  color: white;
+  border: 1px solid white;
+}
+td {
+  padding: 5px;
+}
+i {
+  font-size: 1.4rem;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid_flex</title>
+  <style>
+    .main {
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+    }
+    .container {
+      display: flex;
+    }
+    .box {
+      height: 50px;
+      width: 50px;
+      background: lightcoral;
+      border: 2px solid black;
+    }
+    .div-1 {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 10px;
+
+    }
+    .grid-start {
+      grid-column-start: 1;
+    }
+    .div-2 {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(9, 1fr);
+      height: 180px;
+      margin: 10px;
+      margin-top: 202px;
+    }
+    .div-3 {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(6, 1fr);
+      margin: 8px;
+    }
+     .final {
+      grid-column-start: 6;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="main">
+      <div class="container">
+          <div class="div-1">
+            <div class="box">1</div>
+            <div class="box grid-start">2</div>
+            <div class="box">3</div>
+            <div class="box grid-start ">4</div>
+            <div class="box">5</div>
+            <div class="box grid-start ">6</div>
+            <div class="box">7</div>
+            <div class="box grid-start ">8</div>
+            <div class="box">9</div>
+            <div class="box grid-start ">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+            <div class="box grid-start ">13</div>
+            <div class="box">14</div>
+            <div class="box">15</div>
+          </div>
+          <div class="div-2">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box grid-start"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box  grid-start"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box  grid-start"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <div class="div-3">
+            <div class="box final"></div>
+            <div class="box grid-start"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box grid-start"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box grid-start"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box grid-start"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box grid-start"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box grid-start"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+        </div>
+  </div>
+</body>
+</html>

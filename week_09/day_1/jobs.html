@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jobs | Search</title>
+    <style>
+      body {
+        font-family: "Courier Prime", monospace;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Courier+Prime:400,400i&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row bg-light">
+        <div class="col-6">
+          <nav class="navbar navbar-light">
+            <a class="navbar-brand"
+              ><img
+                src="https://cdn2.iconfinder.com/data/icons/employment-business/256/Employment_News-512.png"
+                alt="img-logo"
+                width="50px"
+              />
+              <span class="p-1">
+                Jobs Indreed
+              </span></a
+            >
+          </nav>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <form class="form-inline p-3">
+              <input
+                id="searchJob"
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Type Here !"
+                aria-label="Search"
+              />
+            </form>
+            <div class="col-2">
+              <button
+                type="button"
+                id="click"
+                class="btn btn-outline-info m-3 p-2"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table class="table"></table>
+    <table id="table" class="table"></table>
+
+    <nav aria-label="Page navigation example" id="pagination">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+            >Previous</a
+          >
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="jobs_script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1 class="username" id="logName"></h1>
+  <p id="timerStart"></p>
+  <p id="timerEnd"></p>
+  <p id="alert"></p>
+  <button id="logout">LogOut</button>
+
+  <script>
+    var logName = document.getElementById('logName')
+    var timerStart = document.getElementById('timerStart')
+    var timerEnd = document.getElementById('timerEnd')
+    var logoutBtn = document.getElementById('logout')
+
+    logoutBtn.addEventListener('click', logout)
+    logName.innerHTML = localStorage.getItem("username");
+
+    var date = new Date();
+
+    var minute = date.getMinutes();
+
+    if (localStorage.getItem("minute") - minute > 5) {
+      alert.innerHTML = "Redirecting Session ended";
+
+      setTimeout(function() {
+        window.location.href = "/index.html";
+      }, 2000);
+
+    } else {
+      localStorage.setItem("minute", minute);
+    }
+
+    timerStart.innerHTML = date;
+    date.setMinutes(minute + 5);
+    timerEnd.innerHTML = date;
+
+  </script>
+</body>
+</html>

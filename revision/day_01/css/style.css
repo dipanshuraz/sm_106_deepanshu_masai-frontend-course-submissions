@@ -1,0 +1,165 @@
+/* || GENERAL STYLES */
+
+body { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo Bhaina 2', cursive;
+  font-weight: 400;
+}
+
+table {
+  height: 100%;
+  width: 100%;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 2px;
+  margin-bottom: 4px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+ul { 
+  list-style: none;
+ }
+
+ .dark {
+   color: black;
+ }
+
+ .bold {
+  font-weight: 500;
+  font-size: 1.2rem;
+ }
+
+ .disabled {
+   color: gray;
+ }
+
+ .cyan {
+   color: #62D1C9;
+   border-color: #62D1C9;
+ }
+.purple {
+  color: rgb(57, 57, 236);
+}
+.red {
+  color: rgb(233, 41, 41);
+}
+
+.btn-xp {
+  padding: 1rem 2rem;
+}
+
+.btn-cyan {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: rgb(24, 138, 138);
+  background-color: rgba(98, 209, 202, 0.5);
+}
+.btn-red {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: rgb(202, 74, 74);
+  background-color: lightcoral
+}
+
+.btn-bg {
+  outline: none;
+  border-radius: 10px;
+  color: white;
+  background: linear-gradient(286deg, rgba(4,165,97,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+
+
+ /* Header */
+header {
+  background-color: rgb(247, 247, 248);
+}
+
+.font-1rem {
+  font-size: 1.2rem;
+}
+
+ /* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  background-color: rgb(247, 247, 248);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  padding: 0px 1rem;
+}
+
+/* main */
+
+main {
+  position: relative;
+  top: 7vh;
+  width: 90vw;
+  margin: 0 auto;
+  height: 32vh;
+}
+
+.row-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.flex-1 {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-2 {
+  flex: 2;
+  text-align: right;
+}
+
+
+/* section search bar */
+section {
+  width: 90vw;
+  margin: 0 auto;
+}
+.search-bar {
+  
+}
+
+
+
+/* table  */
+.tr-flex {
+  background-color: rgb(247, 247, 248);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+tr{ 
+  border: 5px solid white;
+  border-radius: 1rem;
+}

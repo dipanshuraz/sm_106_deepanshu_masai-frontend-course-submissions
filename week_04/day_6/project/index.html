@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style/style.css">
+  <title>Play | Chess</title>
+</head>
+<body>
+        <div class="showElem">
+            <p class="res"></p>
+          </div>
+      <div class="chess-game">
+    
+        <div class="cell-num">8</div>
+        <div onclick="moveMe()" class="cell" id="8-1"><p class="ico-team-black">&#9820;</p></div>
+        <div onclick="moveMe()" class="cell gray" id="8-2"><p onmouseover="horse3StepBlack()" onmouseout="default3Move()" class="ico-team-black">&#9822;</p></div>
+        <div onclick="moveMe()" class="cell" id="8-3"></i><p class="ico-team-black">&#9821;	</p></div>
+        <div onclick="moveMe()" class="cell gray" id="8-4"><p class="ico-team-black">&#9819;	</p></div>
+        <div onclick="moveMe()" class="cell" id="8-5"><p class="ico-team-black">&#9818;</p></div>
+        <div onclick="moveMe()" class="cell gray" id="8-6"><p class="ico-team-black">&#9821;		</p></div>
+        <div onclick="moveMe()" class="cell" id="8-7"><p onmouseover="horse4StepBlack()" onmouseout="default4Move()" class="ico-team-black">&#9822;</p></div>
+        <div onclick="moveMe()" oncl class="cell gray" id="8-8"><p class="ico-team-black">&#9820;</p></div>
+        <div class="clear"></div>
+    
+        <div class="cell-num">7</div>
+        <div onclick="moveMe()" class="cell gray" id="7-1"><p onmouseover="pawnStepDark1()" onmouseout="pawnDefault1()" class="ico-team-black">&#9823;</p></div>
+        <div onclick="moveMe()" class="cell" id="7-2"><p onmouseover="pawnStepDark2()" onmouseout="pawnDefault2()" class="ico-team-black">&#9823;</p></div>
+        <div onclick="moveMe()" class="cell gray" id="7-3"><p onmouseover="pawnStepDark3()" onmouseout="pawnDefault3()"  class="ico-team-black">&#9823;</p></div>
+        <div onclick="moveMe()" class="cell" id="7-4"><p onmouseover="pawnStepDark4()" onmouseout="pawnDefault4()" class="ico-team-black">&#9823;</p></div>
+        <div onclick="moveMe()" class="cell gray" id="7-5"><p onmouseover="pawnStepDark5()" onmouseout="pawnDefault5()" class="ico-team-black">&#9823;</p></div>
+        <div onclick="moveMe()" class="cell" id="7-6"><p onmouseover="pawnStepDark6()" onmouseout="pawnDefault6()" class="ico-team-black">&#9823;</p></div>
+        <div onclick="moveMe()" class="cell gray" id="7-7"><p onmouseover="pawnStepDark7()" onmouseout="pawnDefault7()" class="ico-team-black">&#9823;</p></div>
+        <div onclick="moveMe()" class="cell" id="7-8"><p onmouseover="pawnStepDark8()" onmouseout="pawnDefault8()" class="ico-team-black">&#9823;</p></div>
+        <div class="clear"></div>
+    
+        <div  class="cell-num">6</div>
+        <div class="cell" id="6-1"></div>
+        <div class="cell gray" id="6-2"></div>
+        <div class="cell" id="6-3"></div>
+        <div class="cell gray" id="6-4"></div>
+        <div class="cell" id="6-5"></div>
+        <div class="cell gray" id="6-6"></div>
+        <div class="cell" id="6-7"></div>
+        <div  class="cell gray" id="6-8"></div>
+        <div class="clear"></div>
+    
+        <div class="cell-num">5</div>
+        <div class="cell gray" id="5-1"></div>
+        <div class="cell" id="5-2"></div>
+        <div class="cell gray" id="5-3"></div>
+        <div class="cell" id="5-4"></div>
+        <div class="cell gray" id="5-5"></div>
+        <div class="cell" id="5-6"></div>
+        <div class="cell gray" id="5-7"></div>
+        <div class="cell" id="5-8"></div>
+        <div class="clear"></div>
+    
+        <div class="cell-num">4</div>
+        <div class="cell" id="4-1"></div>
+        <div class="cell gray" id="4-2"></div>
+        <div class="cell" id="4-3"></div>
+        <div class="cell gray" id="4-4"></div>
+        <div class="cell" id="4-5"></div>
+        <div class="cell gray" id="4-6"></div>
+        <div class="cell" id="4-7"></div>
+        <div class="cell gray" id="4-8"></div>
+        <div class="clear"></div>
+    
+        <div class="cell-num">3</div>
+        <div class="cell gray" id="3-1"></div>
+        <div class="cell" id="3-2"></div>
+        <div class="cell gray" id="3-3"></div>
+        <div class="cell" id="3-4"></div>
+        <div class="cell gray" id="3-5"></div>
+        <div class="cell" id="3-6"></div>
+        <div class="cell gray" id="3-7"></div>
+        <div class="cell" id="3-8"></div>
+        <div class="clear"></div>
+    
+        <div class="cell-num">2</div>
+        <div onclick="moveMe()" class="cell" id="2-1"><p  onmouseover="pawnStepLight1()" onmouseout="pawnDefaultLight1()" class="ico-team-white">&#9817;	</p></div>
+        <div onclick="moveMe()" class="cell gray" id="2-2"><p onmouseover="pawnStepLight2()" onmouseout="pawnDefaultLight2()" class="ico-team-white">&#9817;	</p></div>
+        <div onclick="moveMe()" class="cell" id="2-3"><p onmouseover="pawnStepLight3()" onmouseout="pawnDefaultLight3()" class="ico-team-white">&#9817;	</p></div>
+        <div onclick="moveMe()" class="cell gray" id="2-4"><p onmouseover="pawnStepLight4()" onmouseout="pawnDefaultLight4()" class="ico-team-white">&#9817;	</p></div>
+        <div onclick="moveMe()" class="cell" id="2-5"><p  onmouseover="pawnStepLight5()" onmouseout="pawnDefaultLight5()"class="ico-team-white">&#9817;	</p></div>
+        <div onclick="moveMe()" class="cell gray" id="2-6"><p onmouseover="pawnStepLight6()" onmouseout="pawnDefaultLight6()" class="ico-team-white">&#9817;	</p></div>
+        <div onclick="moveMe()" class="cell" id="2-7"><p onmouseover="pawnStepLight7()" onmouseout="pawnDefaultLight7()" class="ico-team-white">&#9817;	</p></div>
+        <div onclick="moveMe()" class="cell gray" id="2-8"><p onmouseover="pawnStepLight8()" onmouseout="pawnDefaultLight8()" class="ico-team-white">&#9817;	</p></div>
+        <div class="clear"></div>
+    
+        <div class="cell-num">1</div>
+        <div onclick="moveMe()" class="cell gray" id="1-1"><p class="ico-team-white">&#9814;</p></div>
+        <div onclick="moveMe()" class="cell" id="1-2"><p onmouseover="horse2StepWhite()" onmouseout="default2Move()" class="ico-team-white">&#9816;</p></div>
+        <div onclick="moveMe()" class="cell gray" id="1-3"><p class="ico-team-white">&#9815;</p></div>
+        <div onclick="moveMe()" class="cell" id="1-4"><p class="ico-team-white">&#9813;</p></div>
+        <div onclick="moveMe()" class="cell gray" id="1-5"><p class="ico-team-white">&#9812;</p></div>
+        <div onclick="moveMe()" class="cell" id="1-6"><p class="ico-team-white">&#9815;</p></div>
+        <div onclick="moveMe()" class="cell gray" id="1-7"><p onmouseover="horseStepWhite()" onmouseout="defaultMove()" class="ico-team-white">&#9816;</p></div>
+        <div onclick="moveMe()" class="cell" id="1-8"><p class="ico-team-white">&#9814;</p></div>
+        <div class="clear"></div>
+    
+        <div class="cell-num blank"></div>
+        <div class="cell-num">A</div>
+        <div class="cell-num">B</div>
+        <div class="cell-num">C</div>
+        <div class="cell-num">D</div>
+        <div class="cell-num">E</div>
+        <div class="cell-num">F</div>
+        <div class="cell-num">G</div>
+        <div class="cell-num">H</div>
+        <div class="clear"></div>
+    
+        <div class="chance">
+          <p class="chance-txt">
+              Your Turn Black/White
+          </p>
+        </div>  
+      </div>
+    
+      <div class="overlay">
+          <div class="overlay-left">
+            <div class="text">
+                <p>Chess</p>
+                <p>Created with &#10084; <br> Patna Area, India</p>
+            </div>
+          </div>
+          
+          <div class="overlay-right">
+            <div class="text">
+                <p>Samurai</p>
+                <p>Masai School</p>
+            </div>
+          </div>
+          
+        </div>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>

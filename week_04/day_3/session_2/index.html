@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900,900i&display=swap" rel="stylesheet">
+  <title>Index</title>
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .task-1,
+    .task-2,
+    .task-3 {
+      border: 2px solid black;
+      height: 15vh;
+      /* padding: 10px; */
+    }
+    .task-1 p{
+      float: left;
+      display: block;
+      width: 50%;
+      text-indent: 100px;
+      font-size: 2rem;
+      line-height: 80px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .task-1 button,
+    .task-2 button,
+    .task-3 button {
+      float: left;
+      font-size: 2rem;
+      padding: 20px;
+      margin-top: 40px;
+
+    }
+    .task-1 input[type=text],
+    .task-2 input[type=text] {
+      height: 80px;
+      width: 220px;
+      float: left;
+      margin: 40px;
+      text-indent: 50px;
+      line-height: 2rem;
+      font-size: 2rem;
+    }
+    
+    h3 {
+      font-weight: 400;
+      font-size: 2rem;
+    }
+    .center {
+      width: 900px;
+      margin: 0 auto;
+    }
+    .task-3 {
+      height: 300px;
+      display: flex;
+    }
+    .left {
+      flex: 1;
+      width: 50%;
+      height: 100%;
+    }
+    .left p {
+      text-indent: 20px;
+      font-size: 4rem;
+      line-height: 80px;
+      color: black;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .task-3 #continent_select {
+      margin: 40px 40px 0px 40px;
+      text-indent: 10px;
+      line-height: 2rem;
+      font-size: 1.8rem;
+      flex: 1;
+      border: 0px;
+      background: rgb(82, 82, 82);
+      color: white;
+      
+    }
+    .task-3 button {
+      flex: 1;
+      margin: 50px;
+    }
+    .task-3 .sub-title {
+      font-size: 2rem;
+      text-align: center;
+      display: block;
+      margin-top: 80px;
+    }
+    
+
+  </style>
+</head>
+<body>
+    <h3>Task-1</h3>
+  <div class="task-1">
+        <p id="result"></p>
+        <input type="text" id="age" maxlength="2">
+        <button onclick="showEligibility()">Check</button>
+    </div>
+
+  </div>
+  <h3>Task-2</h3>
+  <div class="task-2">
+    
+    <div class="center"></div>
+        <input type="text" name="color" id="color">
+        <button onclick="changeColor()" id="btnColor">Change My Color</button>
+    </div>
+
+  </div>
+  <h3>Task-3</h3>
+  <div class="task-3">
+    <div class="left">
+        <span class="sub-title">
+            The Continent is :
+        </span>
+        <p class="showContinent" id="showContinent">
+          Select Country
+          </p>
+    </div>
+    <div class="right">
+      <select id = "continent_select">
+          <option value=""></option>
+          <option value="India">India</option>
+          <option value="United States of America">United States of America</option>
+          <option value="China">China</option>
+          <option value="Nepal">Nepal</option>
+          <option value="Australia">Australia</option>
+          <option value="France">France</option>
+          <option value="Germany">Germany</option>
+          <option value="South Africa">South Africa</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Canada">Canada</option>
+          <option value="Singapore">Singapore</option>
+          <option value="Sweden">Sweden</option>
+        </select>
+      <button onclick="showContinent()">Show Continent</button>
+    </div>
+  </div>
+  <script>
+
+    function showContinent() {
+      var country = document.getElementById('continent_select').value;
+      var continent = '';
+
+    switch (country) {
+
+      case 'India':
+      continent = 'Asia';
+      break;
+      
+      case 'United States of America':
+      continent = 'USA';
+      break;
+
+      case 'China':
+      continent = 'Asia';
+      break;
+
+      case 'Nepal':
+      continent = 'Asia'
+      break;
+
+      case 'Australia':
+      continent = 'Australia'
+      break;
+
+      case 'France':
+      continent = 'Europe'
+      break;
+
+      case 'Germany':
+      continent = 'Europe'
+      break;
+
+      case 'South Africa':
+      continent = 'Africa'
+      break;
+
+      case 'Nigeria':
+      continent = 'Africa'
+      break;
+
+      case 'Mexico':
+      continent = 'North America'
+      break;
+
+      case 'Argentina':
+      continent = 'South America'
+      break;
+
+      case 'Brazil':
+      continent = 'South America'
+      break;
+
+      case 'Canada':
+      continent = 'North America'
+      break;
+
+      case 'Singapore':
+      continent = 'Asia'
+      break;
+
+      case 'Sweden':
+      continent = 'Europe'
+      break;
+
+      default:
+        break;
+    }
+    alert('The continent is '+continent)
+
+    document.getElementById('showContinent').innerHTML = continent;
+      
+    }
+  </script>
+  <script>
+    function showEligibility() {
+      var eligibility = '';
+
+      var age = document.getElementById('age').value;
+
+          if(age == '') {
+          eligibility = 'Please Input Age !!'
+        } else if(age>18) {
+          eligibility = 'You can drive in India!';
+        } else if(age<18) {
+          eligibility = "You can't drive in India";
+        } else if(age==18) {
+          eligibility = 'You are just old enough to drive in India!';
+        }
+        document.getElementById('result').innerHTML = eligibility;
+      }
+  </script>
+  <script>
+    function changeColor() {
+      var color = document.getElementById('color').value;
+      document.getElementById('btnColor').style.background = color;
+      document.getElementById('btnColor').style.color = 'white';
+    }
+  </script>
+
+</body>
+</html>

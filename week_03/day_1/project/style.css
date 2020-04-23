@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+.clear {
+  clear: both;
+}
+.blue {
+  color: blue;
+
+}
+.white {
+  color: white;
+}
+.green {
+  color: green;
+}
+.light {
+  font-weight: 100;
+}
+.dark {
+  font-weight: 300;
+}
+.dark-2 {
+  font-weight: 500;
+}
+.dark-3 {
+  font-weight: 900;
+}
+
+/* Navbar */
+
+
+nav {
+  background: white;
+  height: 10vh;
+}
+.navbar {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar .main-logo {
+  flex: 1;
+}
+.navbar .main-logo img {
+  width: 80px;
+  padding: 10px;
+}
+.navbar ul {
+  /* margin-top: 25px; */
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar ul li {
+  float: left;
+  margin-top: 10px;
+}
+.navbar ul li a {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  padding: 10px;
+  color: black;
+}
+.current {
+  color: black;
+  background: white;
+  border: 2px solid black;
+}
+.navbar ul li a:hover {
+  color: white;
+  background: black;
+  font-weight: 400;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+main {
+  
+  /* background: lightblue; */
+}
+
+/* Section-1 */
+.sec-1 {
+  height: 90vh;
+  text-align: center;
+}
+.sec-1 .container .flex {
+  display: flex;
+  flex-direction: row;
+}
+.sec-1 .sec-1-left {
+  flex: 1;
+  margin-left: 100px;
+}
+.sec-1 .sec-1-left > h1 {
+  font-size: 72px;
+  line-height: 82px;
+  font-weight: 100;
+  margin-top: 200px;
+
+}
+.sec-1 .sec-1-left > p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 100;
+  margin-top: 100px;
+}
+.sec-1 .sec-1-right {
+  flex: 1;
+}
+.sec-1 .sec-1-right img {
+  width: 1000px;
+  margin-top: 200px; 
+}
+
+/* Sec-2 */
+
+.sec-2 {
+  height: 100vh;
+}
+.sec-2 .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sec-2 .about {
+  flex: 1;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 100;
+  color: black;
+  padding: 50px;
+}
+.sec-2 .container > img  {
+  flex: 1;
+  width: 800px;
+  padding: 20px;
+}
+
+/* footer */
+
+footer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+footer .contact {
+  flex: 1;
+  width: 90%;
+  margin: 0 auto;
+  
+  margin-bottom: 100px; 
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer form div > label {
+  font-size: 24px;
+  height: 72px;
+  width: 250px;
+  text-align: center;
+  margin-right: 50px;
+ 
+}
+footer form div > input {
+  height: 72px;
+  width: 250px;
+
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+
+  border-bottom: 2px solid black;
+
+  font-size: 36px;
+  font-weight: 100;
+  text-indent: 10px;
+}
+footer form div > input:hover {
+  border-bottom: 2px solid rgb(118, 190, 231);
+}
+.contact form > p {
+
+  font-size: 2.8rem;
+  line-height: 40px;
+  font-weight: 300;
+  
+  color:rgb(0, 0, 0);
+  margin-top: 100px;
+  
+}
+.contact p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 50px;
+  
+
+}
+.btn  {
+  font-size: 1.8rem;
+  padding: 25px 80px;
+  background: green;
+  color: white;
+  border: 1px solid gray;
+}
+
+form > div {
+  padding: 20px;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  flex: 1;
+  background: black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* background: gray; */
+}
+.footer .img-1 {
+  flex: 1;
+}
+.footer .img-1 img {
+  width: 12rem;
+  
+}
+.footer .div-products {
+  flex: 1;
+}
+.footer table tr th {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: rgb(219, 219, 219);
+  padding: 10px;
+}
+.footer table tr td {
+  font-size: 1.1rem;
+  line-height: 1rem;
+  font-weight: 100;
+  padding: 10px;
+  color: white;
+  
+}
+/* social */
+
+.social {
+  height: 5vh;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+.social .left {
+  flex: 3;
+}
+.social .right {
+  flex: 1;
+}
+.social a i:hover {
+  color: white;
+  background: black;
+}
+.social .left p {
+  font-size: 18px;
+}
+.social a i {
+  color: black;
+  font-size: 26px;
+  padding: 10px 20px;
+}
+
+
+code {
+  font-size: 19px;
+  line-height: 22px;
+}
+/* Version */
+.align-center {
+  text-align: center;
+}
+.ver-sec-1 {
+  text-align: left;
+
+}
+.version-history h2 {
+ font-size: 36px;
+ color: black;
+ line-height: 42px;
+ font-weight: 400;
+ padding: 20px;
+ border-bottom: 1px solid black;
+}
+ .version-history h3 {
+   display: inline-block;
+  font-size: 32px;
+  color: black;
+  line-height: 42px;
+  font-weight: 300;
+  padding: 20px;
+  border-bottom: 1px solid black;
+
+ }
+ .version-history p {
+   font-size: 20px;
+   color: black;
+   line-height: 28px;
+   padding: 20px;
+   font-weight: 100;
+ }
+
+
+ /* Timeline */
+.time-sec-1 {
+  width: 80%;
+  margin: 0 auto;
+}
+ .time-sec-1 table {
+   
+ }
+ .time-sec-1 div {
+   margin-top: 50px;
+ }
+ .time-sec-1 h3 {
+  display: inline-block;
+  font-size: 32px;
+  color: black;
+  line-height: 42px;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+  padding: 20px;
+
+ }
+
+
+ .time-sec-1 h4,
+ .sec-4-1 h4 {
+   padding: 20px;
+   font-size: 24px;
+   line-height: 36px;
+   color: black;
+   font-weight: 400;
+ }
+ .time-sec-1 p,
+ .sec-4-1 p {
+   font-size: 18px;
+   color: black;
+   line-height: 22px;
+   font-weight: 100;
+ }
+ /* .time-sec-1 img { */
+ h3 + img {
+   float: right;
+   margin-top: 100px;
+   width: 400px;
+ }
+ /* .time-sec-1 pre { */
+  h4 ~ pre {
+   font-size: 18px;
+ }
+.other {
+  margin-bottom: 50px;
+}
+
+/* Sec-4 */
+.sec-4-1 {
+  text-align: center;
+ 
+}
+.sec-4-1 div {
+  margin: 50px;
+}
+.sec-4-1 h3 {
+  display: inline-block;
+  font-size: 32px;
+  color: black;
+  line-height: 42px;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+  
+
+}
+.vs {
+  width: 500px;
+}
+.time-sec-1 p,
+ .sec-4-1 p {
+   font-size: 18px;
+   color: black;
+   line-height: 24px;
+   font-weight: 100;
+   text-align: left;
+ }
+ .sec-4-1 pre {
+   font-size: 19px;
+   line-height: 24px;
+   text-align: center;
+ }
+
+ blockquote {
+   width: 60%;
+   font-size: 20px;
+   font-weight: 300;
+   text-align: justify;
+   margin: 0 auto;
+ }
+ 
+ .code {
+  font-family: 'Source Code Pro', monospace;
+}
+
+
+ /* Media Queries */
+

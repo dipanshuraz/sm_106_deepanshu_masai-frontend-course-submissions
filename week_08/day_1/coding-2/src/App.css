@@ -1,0 +1,53 @@
+.btn {
+  border-radius: 25px;
+}
+.circle {
+  list-style-type: circle;
+}
+.round {
+  border-radius: 25px;
+  height: 30px;
+  width: 150px;
+  margin: 10px;
+  line-height: 10px;
+}
+.teal {
+  background-color: teal;
+}
+.pro {
+  background-color: #f7bb44;
+  border-radius: 5px;
+  border: 1px solid rgb(202, 202, 202);
+  color: black;
+}
+.bg-card-light {
+  background-color: #2e2650;
+}
+.bg-card {
+  background-color: #27213f;
+}
+.neon-border {
+  border: 1px solid cyan;
+  border-radius: 50%;
+}
+.circle {
+  height: 150px;
+  width: 150px;
+}
+.neon-dark {
+  background-color: #51c0cb;
+}
+.neon-line {
+  border: 1px solid #51c0cb;
+  color: #51c0cb;
+}
+.skill {
+  border: 1px solid #5e636d;
+  margin: 5px;
+}
+.skill-bg {
+  background-color: #1e1936;
+}
+.user-card {
+  width: 22rem;
+}

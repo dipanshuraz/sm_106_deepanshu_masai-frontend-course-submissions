@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      label {
+        font-size: 1.5rem;
+
+      }
+      input {
+        font-size: 1.6rem;
+      }
+      #submitBtn {
+        padding: 20px 40px;
+      }
+    </style>
+  </head>
+<body>
+  <!-- FSD.W4.3.1_1 !-->
+
+  <h1>Click the button to add a new customer!</h1>
+
+  <form action="">
+    <table>
+      <tr>
+        <td><label for="">First Name</label></td>
+        <td><input type="text" name="" id="fname"></td>
+      </tr>
+      <tr>
+        <td><label for="">Last Name</label></td>
+        <td><input type="text" name="" id="lname"></td>
+      </tr>
+      <tr>
+        <td><label for="">Date Of Birth</label></td>
+        <td><input type="text" id="dOB"></td>
+      </tr>
+      <tr>
+        <td><label for="">Balance</label></td>
+        <td><input type="text" id="balance"></td>
+      </tr>
+      <tr>
+        <td><label for="">Account Number</label></td>
+        <td><input type="text" name="" id="accNum"></td>
+      </tr>
+      <tr>
+        <td><label for="">Shared Acc Holders</label></td>
+        <td><input type="text" id="sharedAccNum"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value=" Add Details" id="submitBtn"></td>
+
+      </tr>
+    </table>
+  </form>
+
+  <button>Add customer</button>
+  <!-- FSD.W4.3.1_3 !-->
+  <h1> Click here to print all customers! <h1>
+  <button onclick="">Print Customers</button>  
+  <div id="displayContainer"> </div>
+  
+
+  <script>
+    var customerArr = [];
+    function Customers(fname,lname,dOB,balance, accNum, sharedAccNum) {
+      this.fname = fname
+      this.lanme = lname
+      this.dOB = dOB
+      this.balance = balance
+      this.accNum = accNum
+      this.sharedAccNum = sharedAccNum
+    }
+
+    function addCustomer() {
+      var fname = document.getElementById('fname').value;
+      var lname = document.getElementById('lname').value;
+      var dOB = document.getElementById('dOB').value;
+      var balance = document.getElementById('balance').value;
+      var accNum = document.getElementById('accNum').value;
+      var sharedAccNum = document.getElementById('sharedAccNum').value;
+
+      var customers = new Customers(fname,lname,dOB,balance,accNum,sharedAccNum) 
+      customerArr.push(customers)
+      // console.log(customerArr)
+      alert(customerArr)
+
+      
+    }
+
+    
+
+    var submitBtn = document.querySelector('#submitBtn')
+    submitBtn.addEventListener('click', addCustomer)
+
+
+  </script>
+</body>
+</html>

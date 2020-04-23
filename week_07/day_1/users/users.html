@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Users</title>
+  </head>
+  <body>
+    <div id="elem"></div>
+    <div class="row">
+      <div class="col">
+        <nav aria-label="...">
+          <ul class="pagination">
+            <li class="page-item active">
+              <a class="page-link" href="#" id="page1">1</a>
+            </li>
+            <li class="page-item " aria-current="page" id="page2">
+              <a class="page-link" href="#">2</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function(page) {
+        $("#btn-get").click(function(e) {
+          event.preventDefault();
+        });
+
+        var base = "https://reqres.in/api/users?page=";
+        $.ajax({
+          url: base + page
+        }).done(function(data) {
+          console.log(data);
+          data.data.forEach(function(user) {
+            var child = `<li  class="list-group-item d-flex justify-content-between align-items-center ">
+          <span class='list-group-item '>${user.id}</span>
+          <span>${user.first_name + user.last_name}</span>
+          <span>${user.email}</span>
+          <img src="${user.avatar}" class="img-fluid" />
+        </li>`;
+
+            $("#elem").append(child);
+          });
+        });
+
+        $("#page1").click(function() {
+          page = 1;
+          console.log(page);
+        });
+        $("#page2").click(function() {
+          page = 2;
+          console.log(page);
+        });
+      });
+    </script>
+  </body>
+</html>

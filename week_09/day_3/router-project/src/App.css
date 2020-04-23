@@ -1,0 +1,71 @@
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(./assets/fonts/Avenir-Heavy.ttf);
+}
+@font-face {
+  font-family: Avenir-Medium;
+  src: url(./assets/fonts/Avenir-Medium.ttf);
+}
+@font-face {
+  font-family: Avenir-Next-Bold;
+  src: url(./assets/fonts/AvenirNext-Bold.ttf);
+}
+body {
+  font-family: Avenir-Medium;
+}
+
+.h-100 {
+  height: 100vh;
+}
+li {
+  list-style: none;
+}
+.inline li {
+  display: inline;
+  padding: 1rem;
+}
+.icons-social i {
+  font-size: 1.2rem;
+  color: black;
+  padding-left: 20px;
+}
+.bg-img-1 {
+  background: url("https://cdn.shopify.com/s/files/1/0112/3682/files/IMG_3108_720x.PNG?v=1578083398")
+    no-repeat center center/cover;
+  height: 75vh;
+}
+
+.bg-img-2 {
+  background: url(./assets//img/bg-img-2.jpg) no-repeat center center/cover;
+  height: 75vh;
+}
+
+.bg-img-3 {
+  background: url("https://images.pexels.com/photos/291762/pexels-photo-291762.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat center center/cover;
+  height: 55vh;
+  /* filter: blur(1px); */
+  filter: grayscale(100%);
+  transition: all 0.2s ease-in-out;
+}
+.bg-img-3:hover,
+.bg-img-4:hover {
+  filter: unset;
+}
+
+.bg-img-4 {
+  background: url("https://images.pexels.com/photos/1078958/pexels-photo-1078958.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+    no-repeat center center/cover;
+  height: 55vh;
+  filter: grayscale(100%);
+  transition: all 0.2s ease-in-out;
+}
+.line-dark {
+  height: 10px;
+  width: 150px;
+  background-color: lightseagreen;
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+}

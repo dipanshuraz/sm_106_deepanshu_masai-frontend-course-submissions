@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* nav */
+nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+.ico {
+  flex: 1;
+}
+.ico img {
+  width: 150px;
+  margin: 20px;
+
+}
+.link a {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 25px;
+  margin: 5px;
+  
+}
+.link .btn-1 {
+  border: 1px solid red;
+  color: red;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 12px 15px;
+  border-radius: 5px;
+  margin-right: 40px;
+  margin-left: 10px;
+}
+.link .btn-1:hover {
+  background: red;
+  color: white;
+}
+
+.sec-1 {
+  background: url(https://www.masaischool.com/static/posters/banner_1.jpg) no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: right;
+  padding-right: 200px;
+}
+.sec-1 p:first-child {
+  color: white;
+  font-size: 6rem;
+  line-height:90px;
+  font-weight: 600;
+  
+
+}
+.sec-1 p:last-child {
+  font-size: 58px;
+  line-height: 120px;
+  font-weight: 300;
+  color: white;
+}
+
+/* Section-2 */
+.sec-2  {
+
+}
+.sec-2-container {
+  display: flex;
+  text-align: center;
+  margin-top: 150px;
+}
+.sec-2-img {
+  width: 28%;
+  margin: 0 auto;
+}
+.sec-2-container > div >img {
+  width: 200px;
+}
+.skills p:nth-child(2),
+.pay p:nth-child(2), 
+.development p:nth-child(2) {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  margin: 20px;
+}
+.skills p:nth-child(3),
+.pay p:nth-child(3), 
+.development p:nth-child(3) {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 300;
+  margin: 20px;
+}
+
+/*  Section-3 */
+.sec-3 {
+  height: 90vh;
+  font-size: 42px;
+  font-weight: 200;
+  line-height: 48px;
+  color: white;
+  background: linear-gradient(to right, #453C7C,#5BD0BD);
+  text-align: center;
+  padding-top: 70px;
+
+
+}
+.div-bottom-2 {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 280px 280px;
+  justify-content: center;
+  align-content: center;
+  margin-top: 100px;
+  text-align: center;
+}
+.card {
+  border: 2px solid gray;
+  font-size: 4.2rem;
+  line-height: 4rem;
+  Color: #3584a7;
+  padding-top: 80px;
+  background: white;
+
+}
+.card p:last-child {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: gray;
+  padding: 20px;
+}
+.small {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+}
+/* Sec-4 */
+.div-desc {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 80px;
+}
+.div-desc p:nth-child(2) {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+.card-1 {
+  padding: 40px;
+  width: 550px;
+  margin: 0 auto;
+  border: 2px solid gray;
+}
+.div-desc p:first-child {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 200;
+  padding: 50px;
+}
+.div-desc p:last-child {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+.card-1 img {
+  height: 400px;
+  width: 500px;
+  margin: 10px;
+}

@@ -1,0 +1,20 @@
+TC,"Turks & Caicos Islands"
+TV,Tuvalu
+UM,"U.S. Outlying Islands"
+VI,"U.S. Virgin Islands"
+UG,Uganda
+UA,Ukraine
+AE,"United Arab Emirates"
+GB,"United Kingdom"
+US,"United States"
+UY,Uruguay
+UZ,Uzbekistan
+VU,Vanuatu
+VA,"Vatican City"
+VE,Venezuela
+VN,Vietnam
+WF,"Wallis & Futuna"
+EH,"Western Sahara"
+YE,Yemen
+ZM,Zambia
+ZW,Zimbabwe

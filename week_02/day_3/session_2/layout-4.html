@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid_1</title>
+  <style>
+    .main {
+      display: grid;
+      width: 1200px;
+      margin: 0 auto;
+      margin-top: 300px;
+      grid-template-columns: repeat(5, 1fr);
+    }
+    .box {
+      height: 200px;
+      width: 200px;
+      margin: 20px;
+      background: teal;
+      border-radius: 5px;
+    }
+    @media (max-width: 1024px) {
+      .main {
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .main .box {
+        background: rebeccapurple;
+        width: 150px;
+        height: 150px;
+      }
+    }
+    @media (max-width: 600px) {
+      .main {
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .main .box {
+        background: green;
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+    <div class="box box7"></div>
+    <div class="box box8"></div>
+    <div class="box box9"></div>
+    <div class="box box10"></div>
+  </div>
+</body>
+</html>

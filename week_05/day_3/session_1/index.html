@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+
+    }
+    form {
+      width: 400px;
+      margin: 300px auto;
+    }
+    label {
+      font-size: 2rem;
+    }
+    input {
+      height: 60px;
+      width: 220px;
+      border: 1px solid black;
+      margin: 20px;
+      font-size: 1.6rem;
+      text-indent: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <table>
+      <tr>
+        <td><label for="">Username</label></td>
+        <td><input type='text' id='username'></td>
+      </tr>
+      <tr>
+        <td>
+            <label for="">Password</label>
+        </td>
+        <td>
+            <input type="password" name="" id="password">
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="Submit" id="submitKey" onclick="setData()"></td>
+      </tr>
+    </table>
+  </form>
+  <script>
+    function setData() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById('password').value;
+
+      localStorage.setItem("username",'admin')
+      localStorage.setItem("password",'123')
+
+      var uname = localStorage.getItem('username')
+      var upass = localStorage.getItem('password')
+
+      if(username == uname && password == upass) {
+        window.location.href = 'dash.html'
+      } else {
+        alert('No User');
+      }
+
+      
+    }
+
+  </script>
+</body>
+</html>
+
+
+    
+    
+    

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Practise Deletions</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>First H1</h1>
+        <h1>Second H1</h1>
+        <h3>First H3</h3>
+        <h3>Second H3</h3>
+        <div id="headings">
+            <h5>First H5</h5>
+            <h5>Second H5</h5>
+            <h5>Third H5</h5>
+        </div>
+        <div id="cont">
+            <div class="green">First DIV</div>
+            <div class="red">Second DIV</div>
+            <div class="blue">Third DIV</div>
+            <p class="green">First P</p>
+            <p class="red">Second P</p>
+            <p class="blue">Third P</p>
+        </div>
+        <hr/>
+        <button id="removeH1">Remove H1</button>
+        <button id="removeH3">Remove H3</button>
+        <button id="removeH5">Remove H5</button>
+        <button id="removeRed">Remove Red</button>
+        <button id="removeDivs">Remove DIVS</button>
+        <script>
+            $('#removeH1').click(function(){
+                $('h1:nth-child(1)').remove();
+            })
+            $('#removeH3').click(function(){
+                $('h3').empty();
+            })
+            $('#removeH5').click(function(){
+                $('h5').empty();
+            })
+            $('#removeRed').click(function(){
+                $('#cont .red').remove();
+            })
+            $('#removeDivs').click(function(){
+                $('#cont').empty();
+            })
+        </script>
+    </body>
+</html>
